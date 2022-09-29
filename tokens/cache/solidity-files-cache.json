@@ -291,10 +291,54 @@
         }
       }
     },
-    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/src/Contract.sol": {
-      "lastModificationDate": 1664494846319,
-      "contentHash": "0a4db02f64172ef6ba21d89f49444a92",
-      "sourceName": "src/Contract.sol",
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1664495577586,
+      "contentHash": "bf161670e02cae699c719703be7ea955",
+      "sourceName": "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "AccessControl": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AccessControl.sol/AccessControl.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/access/IAccessControl.sol": {
+      "lastModificationDate": 1664495577587,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -321,17 +365,624 @@
         }
       },
       "imports": [],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": "^0.8.0",
       "artifacts": {
-        "Contract": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Contract.sol/Contract.json"
+        "IAccessControl": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IAccessControl.sol/IAccessControl.json"
         }
       }
     },
-    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/test/Contract.t.sol": {
-      "lastModificationDate": 1664494846319,
-      "contentHash": "848ba83feec29a2e4d286c118102ae20",
-      "sourceName": "test/Contract.t.sol",
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1664495577587,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Ownable": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1664495577615,
+      "contentHash": "92cc1aad41bdb18ca20f6e03f461de7d",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1664495577615,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol": {
+      "lastModificationDate": 1664495577615,
+      "contentHash": "a1c7f80ae26f5b2d7d563475627fbf25",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC20Burnable": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ERC20Burnable.sol/ERC20Burnable.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1664495577617,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20Metadata": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC20Metadata.sol/IERC20Metadata.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "lastModificationDate": 1664495577617,
+      "contentHash": "fb77f144244b9ab12533aa6ce85ef8c5",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20Permit": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "draft-IERC20Permit.sol/IERC20Permit.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1664495577618,
+      "contentHash": "3a843b05b85a270e9455e3d2e804e633",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "SafeERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "SafeERC20.sol/SafeERC20.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+      "lastModificationDate": 1664495577622,
+      "contentHash": "1ded8fed2186fa6599c2aeb962009262",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.1",
+      "artifacts": {
+        "Address": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Address.sol/Address.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+      "lastModificationDate": 1664495577622,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Context.sol/Context.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1664495577623,
+      "contentHash": "a0c595fbbddc5c8b4f45c5f496ad90ff",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Strings": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Strings.sol/Strings.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1664495577624,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC165": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ERC165.sol/ERC165.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1664495577625,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC165": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/lib/openzeppelin-contracts/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1664495577625,
+      "contentHash": "0330d7606b25d35159d0fdfa345ae87f",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Math": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Math.sol/Math.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/src/TalentDaoToken.sol": {
+      "lastModificationDate": 1664495088340,
+      "contentHash": "d8993d3d93726b4115b72f2ec55d1959",
+      "sourceName": "src/TalentDaoToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "TalentDaoToken": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "TalentDaoToken.sol/TalentDaoToken.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/src/veTalentDaoToken.sol": {
+      "lastModificationDate": 1664495833812,
+      "contentHash": "da9e00e4bafa2593cd5a5d6bdb3a450b",
+      "sourceName": "src/veTalentDaoToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "veTalentToken": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "veTalentDaoToken.sol/veTalentToken.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/test/TalentDaoToken.t.sol": {
+      "lastModificationDate": 1664495076209,
+      "contentHash": "6898c44e2e0e2b1105009436b2b9cf1f",
+      "sourceName": "test/TalentDaoToken.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -368,8 +1019,53 @@
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
-        "ContractTest": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Contract.t.sol/ContractTest.json"
+        "TalentDaoTokenTest": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "TalentDaoToken.t.sol/TalentDaoTokenTest.json"
+        }
+      }
+    },
+    "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/tokens/test/veTalentDaoToken.t.sol": {
+      "lastModificationDate": 1664495856214,
+      "contentHash": "6898c44e2e0e2b1105009436b2b9cf1f",
+      "sourceName": "test/veTalentDaoToken.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "TalentDaoTokenTest": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "veTalentDaoToken.t.sol/TalentDaoTokenTest.json"
         }
       }
     }
