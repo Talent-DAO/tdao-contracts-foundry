@@ -208,11 +208,9 @@ contract TalentStaking is AccessControl, TokenRecover {
                 block.number
             );
             uint256 talentReward = (multiplier * (TALENT_PER_BLOCK * pool.allocationPoint)) / totalAllocationPoint;
-            console.log("Pending Talent for user", talentReward);
             accTalentPerShare = accTalentPerShare + (
                 (talentReward * 1e12) / lpSupply
             );
-            console.log("Acc TALENT per share ", accTalentPerShare);
         }
 
         return ((staker.amount * accTalentPerShare) / 1e12) - staker.rewardDebt;
@@ -245,7 +243,6 @@ contract TalentStaking is AccessControl, TokenRecover {
         if (user.amount > 0) {
             uint256 pending = (user.amount * pool.accTalentPerShare) / 1e12 - user.rewardDebt;
             safeTalentTransfer(msg.sender, pending);
-            console.log("Transferred ", pending, " PRHO rewards");
         }
 
         talentToken.transferFrom(
@@ -254,10 +251,8 @@ contract TalentStaking is AccessControl, TokenRecover {
             _amount
         );
         pool.depositSum = pool.depositSum + _amount;
-        console.log("Transferred ", _amount, " Talent");
         // veTalentToken.mintStakerTokens(msg.sender, _amount);
         safeVeTalentTransfer(msg.sender, _amount);
-        console.log("Transferred ", _amount, " veTalent");
         user.amount = user.amount + _amount;
         user.rewardDebt = (user.amount + pool.accTalentPerShare) / 1e12;
         
