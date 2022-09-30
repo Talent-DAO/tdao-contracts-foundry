@@ -1,3 +1,0 @@
-[submodule "tokens/lib/openzeppelin-contracts"]
-	path = tokens/lib/openzeppelin-contracts
-	url = https://github.com/OpenZeppelin/openzeppelin-contracts
