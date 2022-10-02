@@ -922,8 +922,8 @@
       }
     },
     "/Users/jasonromero/Projects/TDAO/contracts/tdao-contracts-foundry/staking/test/TalentStaking.t.sol": {
-      "lastModificationDate": 1664496262014,
-      "contentHash": "848ba83feec29a2e4d286c118102ae20",
+      "lastModificationDate": 1664739162412,
+      "contentHash": "ebcd0270c0276f5b9fcc0a15315d63ba",
       "sourceName": "test/TalentStaking.t.sol",
       "solcConfig": {
         "settings": {
@@ -957,7 +957,15 @@
         "lib/forge-std/src/Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
+        "lib/forge-std/src/console2.sol",
+        "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
