@@ -1,4 +1,4 @@
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.4;
 pragma experimental ABIEncoderV2;
 //SPDX-License-Identifier: GPL
 
@@ -99,7 +99,7 @@ contract veTalentToken is ERC20, Ownable, AccessControl, ERC20Burnable {
     (
         address _owner
     )
-        ERC20("veTalent Reputation Token", "veTALENT")
+        ERC20("veTalent Voting Token", "veTALENT")
         ERC20Burnable()
     {
         _setupRole(OPERATOR_ROLE, msg.sender);
